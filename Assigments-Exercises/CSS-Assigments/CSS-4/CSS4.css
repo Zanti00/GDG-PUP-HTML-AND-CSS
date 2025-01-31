@@ -1,24 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: black;
 }
 
-/* h1 */
+h1 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: #f1f1f1;
+}
 
-/* #subtitle */
+#subtitle {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #f1f1f1;
+}
 
-/* .flexboxContainer */
+.flexboxContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  gap: 5%;
+}
 
-/*.flexboxContainer > div */
+.flexboxContainer > div {
+  width: 20%;
+  height: 50%;
+  background-image: linear-gradient(
+    to right,
+    rgba(12, 62, 224, 0),
+    rgb(150, 105, 47)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+  padding: 3%;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  border-radius: 60px;
+}
 
-/* a */
+a {
+  color: #f1f1f1;
+  text-decoration: none;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
 
-/* img */
+img {
+  width: 80%;
+}
 
-/* .flexboxContainer > div:hover */
-
+.flexboxContainer > div:hover {
+  background-image: linear-gradient(
+    to left,
+    rgb(150, 105, 47),
+    rgba(0, 255, 64, 0.3)
+  );
+  box-shadow: 0 0px 50px 5px rgba(3, 253, 128, 0.5);
+}
